@@ -1,0 +1,19 @@
+.footer {
+  background: mix($color-tan, $color-black, 90%);
+  bottom: 0;
+  height: 96px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.footer nav {
+  float: left;
+}
+
+.footer small {
+  float: right;
+  font-size: 1rem;
+  line-height: line-height-for(1rem);
+  text-align: right;
+}

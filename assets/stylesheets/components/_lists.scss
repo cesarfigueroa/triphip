@@ -1,0 +1,83 @@
+%list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Inline
+
+.inline-list {
+  @extend %list;
+}
+
+.inline-list li {
+  display: inline-block;
+
+  &:not(:first-child) {
+    @extend %inlinefix;
+  }
+}
+
+.inline-list .selected {
+  font-weight: $weight-semibold;
+}
+
+// Inline, centered
+
+.inline-list--centered {
+  text-align: center;
+}
+
+.inline-list--centered li {
+  text-align: left;
+}
+
+// Inline, bulleted
+
+.inline-list--bulleted li:not(:first-child):before {
+  color: $color-dark-gray;
+  content: '●';
+  font-size: 0.6875rem;
+  padding: 0 ($margin-half + $margin-quarter);
+}
+
+// Cards
+
+.card-list {
+  @extend %list;
+  @extend %clearfix;
+
+  margin-bottom: (-$margin);
+}
+
+.card-list > li {
+  @include half;
+  margin-bottom: $margin;
+}
+
+// Form
+
+.form-list {
+  @extend %list;
+  @extend %clearfix;
+}
+
+.form-list li {
+  @include half;
+
+  margin-bottom: 1rem; // Account for label padding
+  position: relative;
+}
+
+// Flights
+
+.flight-list {
+  @extend %list;
+  @extend %clearfix;
+
+  margin-bottom: (-$margin);
+}
+
+.flight-list > li {
+  margin-bottom: $margin;
+}

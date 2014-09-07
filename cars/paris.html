@@ -1,0 +1,17 @@
+---
+layout: default
+title: Car Rentals in Paris, France
+permalink: /cars/paris/
+---
+
+<article>
+  <h2>{{ page.title }}</h2>
+
+  {% include date-picker.html to="Pick Up" from="Drop Off" guests="Passengers" %}
+
+  <ul class="card-list">
+    {% for car in site.data.cars %}
+      <li>{% include cards/car.html car=car %}</li>
+    {% endfor %}
+  </ul>
+</article>

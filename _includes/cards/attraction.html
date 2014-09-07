@@ -1,0 +1,12 @@
+<div class="card card--mini">
+  <a href="{{ include.attraction.url }}" target="_blank">
+    <div class="card-details">
+      {% include image.html name=include.attraction.slug directory="attractions" %}
+    </div>
+
+    <div class="card-summary">
+      <h4 class="card-title" title="{{ include.attraction.name }}">{{ include.attraction.name }}</h4>
+      <span class="card-subtitle">{{ include.attraction.category }}</span>
+    </div>
+  </a>
+</div>

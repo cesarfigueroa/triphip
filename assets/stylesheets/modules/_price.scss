@@ -1,0 +1,35 @@
+.price {
+  font-weight: normal;
+}
+
+.price-amount,
+.price-currency-symbol {
+  font-weight: $weight-semibold;
+}
+
+.price-currency-symbol {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.price-period {
+  font-weight: normal;
+}
+
+// Sticky
+
+.price--sticky {
+  @extend h4;
+
+  background: $color-black;
+  border-radius: 0 $size-border-radius $size-border-radius 0;
+  bottom: $margin;
+  color: $color-white;
+  left: 0;
+  margin: 0;
+  padding: $margin-half $margin-half $margin-half $margin;
+  position: absolute;
+  z-index: 1;
+}

@@ -1,0 +1,34 @@
+---
+layout: default
+title: Hotel Particulier Montmartre
+permalink: /hotels/paris/hotel-particulier-montmartre/
+---
+
+{% assign hotel = site.data.hotels.first %}
+
+<article>
+  <div class="hero" data-image-src="/assets/images/hotels/hotel-particulier-montmartre/1.jpg">
+    {% include image.html directory="hotels" name="hotel-particulier-montmartre" index=1 %}
+  </div>
+
+  <header>
+    <h2>{{ hotel.name }}</h2>
+
+    <ul class="inline-list inline-list--bulleted">
+      <li>{% include rating.html count=hotel.rating %}</li>
+      <li>{{ hotel.phone }}</li>
+    </ul>
+  </header>
+
+  <p>{{ hotel.description }}</p>
+
+  <section>
+    <h3>Choose a Room</h3>
+
+    <ul class="card-list">
+      {% for room in hotel.rooms %}
+        <li>{% include cards/room.html room=room %}</li>
+      {% endfor %}
+    </ul>
+  </section>
+</article>

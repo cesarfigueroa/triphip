@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51px" height="9px" viewBox="0 0 51 9">
+  <g fill="none" fill-rule="evenodd">
+    <circle fill="#FFFFFF" cx="46.5" cy="4.5" r="4.5"></circle>
+    <circle fill="#FFFFFF" cx="25.5" cy="4.5" r="4.5"></circle>
+    <path d="M4.5,9 C6.9852815,9 9,6.9852815 9,4.5 C9,2.0147185 6.9852815,0 4.5,0 C2.0147185,0 0,2.0147185 0,4.5 C0,6.9852815 2.0147185,9 4.5,9 Z M4.5,7 C5.88071194,7 7,5.88071194 7,4.5 C7,3.11928806 5.88071194,2 4.5,2 C3.11928806,2 2,3.11928806 2,4.5 C2,5.88071194 3.11928806,7 4.5,7 Z" fill="#FFFFFF" />
+  </g>
+</svg>

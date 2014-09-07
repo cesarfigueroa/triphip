@@ -1,0 +1,30 @@
+---
+layout: home
+---
+
+<article>
+  <div class="hero hero--underlay" data-image-src="/assets/images/destinations/hero.jpg" data-position="bottom">
+    {% include image.html directory="destinations" name="hero" %}
+    {% include search.html %}
+  </div>
+
+  <h2>Destinations</h2>
+
+  <ul class="card-list">
+    {% for destination in site.data.destinations limit:6 %}
+      <li>
+        {% include cards/destination.html destination=destination %}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <section>
+    <h3>More Places to Explore</h3>
+
+    <ul class="card-list">
+      {% for city in site.data.destinations offset:6 %}
+        <li><a href="/destinations/france/paris/">{{ city }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+</article>

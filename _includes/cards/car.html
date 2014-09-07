@@ -1,0 +1,15 @@
+<div class="card has-button">
+  <div class="card-details">
+    {% include image.html name=include.car.type directory="cars" %}
+  </div>
+
+  <div class="card-summary">
+    <h3 class="card-title">{{ include.car.type | capitalize }}</h3>
+
+    <form action="/book">
+      <button type="submit" class="button button--sticky" title="Including fees and taxes">
+        Book for {% include price.html amount=include.car.total %}
+      </button>
+    </form>
+  </div>
+</div>

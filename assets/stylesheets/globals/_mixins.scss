@@ -1,0 +1,40 @@
+@mixin vendor-prefix($property, $value, $prefixes, $unprefixed: true) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$property}: $value;
+  }
+
+  @if $unprefixed {
+    #{$property}: $value;
+  }
+}
+
+@mixin animation($value) {
+  @include vendor-prefix(animation, $value, ('moz', 'o', 'webkit'));
+}
+
+@mixin appearance($value) {
+  @include vendor-prefix(appearance, $value, ('moz', 'webkit'), false);
+}
+
+@mixin box-sizing($value) {
+  @include vendor-prefix(box-sizing, $value, ('moz', 'webkit'));
+}
+
+@mixin transform($value) {
+  @include vendor-prefix(transform, $value, ('ms', 'moz', 'o', 'webkit'));
+}
+
+@mixin transition($value) {
+  @include vendor-prefix(transition, $value, ('moz', 'o', 'webkit'));
+}
+
+@mixin user-select($value) {
+  @include vendor-prefix(user-select, $value, ('ms', 'moz', 'webkit'));
+}
+
+@mixin keyframes($name) {
+  @-moz-keyframes #{$name} { @content; }
+  @-o-keyframes #{$name} { @content; }
+  @-webkit-keyframes #{$name} { @content; }
+  @keyframes #{$name} { @content; }
+}

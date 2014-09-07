@@ -1,0 +1,44 @@
+// Colors
+
+$color-black: #373737;
+$color-red: #FD4024;
+$color-tan: #FCFCF9;
+$color-white: #FFFFFF;
+
+$color-blue: #5496EF;
+$color-dark-blue: #4282DF;
+
+$color-gray: #D0D0D0;
+$color-light-gray: lighten($color-gray, 10);
+$color-dark-gray: darken($color-gray, 10);
+
+$color-green: #88DD67;
+$color-dark-green: #73C951;
+
+// Widths
+
+$width-layout-max: 68.25rem;
+$width-layout: 63.75rem;
+$width-column: 3.9375rem;
+$width-gutter: 1.5rem;
+$width-tablet: 769px;
+
+// Margins
+
+$margin-quarter: ($width-gutter / 4);
+$margin-third: ($width-gutter / 3);
+$margin-half: ($width-gutter / 2);
+$margin: $width-gutter;
+$margin-offset: ($width-gutter * 1.5);
+$margin-double: ($width-gutter * 2);
+
+// Sizes
+
+$size-border-radius: 4px;
+$size-shadow-collapsed: 2px;
+$size-shadow-expanded: 4px;
+
+// Typography
+
+$line-height: 1.5;
+$weight-semibold: 600;

@@ -1,0 +1,44 @@
+- name: Musée du Louvre
+  slug: musee-du-louvre
+  category: Museums
+  url: http://louvre.fr/en
+
+- name: Eiffel Tower
+  slug: eiffel-tower
+  category: Landmarks
+  url: http://www.tour-eiffel.fr/
+
+- name: Notre-Dame Cathedral
+  slug: notre-dame-cathedral
+  category: Religious
+  url: http://www.notredamedeparis.fr/
+
+- name: Luxembourg Gardens
+  slug: luxembourg-gardens
+  category: Parks
+  url: http://www.senat.fr/visite/jardin/index.html
+
+- name: Arc de Triomphe
+  slug: arc-de-triomphe
+  category: Landmarks
+  url: http://www.arcdetriompheparis.com
+
+- name: Versailles Palace
+  slug: versailles-palace
+  category: Parks
+  url: http://en.chateauversailles.fr/
+
+- name: Musée d'Orsay
+  slug: musee-dorsay
+  category: Museums
+  url: http://www.musee-orsay.fr/en/
+
+- name: Sacré-Cœur Basilica
+  slug: sacre-coeur-basilica
+  category: Religious
+  url: http://www.sacre-coeur-montmartre.com/english/
+
+- name: Catacombes de Paris
+  slug: catacombes-de-paris
+  category: Memorials
+  url: http://www.catacombes.paris.fr

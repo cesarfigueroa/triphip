@@ -1,0 +1,21 @@
+.search {
+  @extend %align-center;
+
+  max-width: 720px;
+  width: percentage(2/3);
+}
+
+.search label {
+  @extend %hide-content;
+}
+
+.search input {
+  background: $color-white url('/assets/images/pin.svg') no-repeat 40px center;
+  border-radius: 48px;
+  border: 0;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  font-size: 1.75rem;
+  font-weight: $weight-semibold;
+  height: line-height-for(1.75rem) * 4;
+  text-indent: 83px; // background image width + offsets
+}

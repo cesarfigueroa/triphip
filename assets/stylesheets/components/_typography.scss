@@ -1,0 +1,71 @@
+// Headings
+
+h1 {
+  font-size: 1.75rem;
+  line-height: line-height-for(1.75rem);
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: $weight-semibold;
+  line-height: line-height-for(1.5rem);
+  margin: $margin-double 0;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: $weight-semibold;
+  line-height: line-height-for(1.125rem);
+  margin: $margin-double 0;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: $weight-semibold;
+  line-height: line-height-for(1rem);
+  margin: $margin-double 0;
+}
+
+// Headers
+
+article > h2 {
+  text-align: center;
+}
+
+article > header {
+  margin: $margin-double 0;
+  text-align: center;
+
+  & > :first-child {
+    margin: 0 0 $margin-quarter;
+  }
+
+  & > :last-child {
+    font-weight: normal;
+    margin: 0 0 (-$margin-quarter);
+  }
+}
+
+// Paragraphs
+
+p {
+  font: 1.5rem/1.5 'freight-text-pro', Georgia, serif;
+  margin: $margin 0 $margin-double;
+}
+
+// Lists
+
+ul, ol, dl {
+  margin: $margin 0;
+}
+
+// Other
+
+address {
+  font-style: normal;
+}
+
+strong {
+  font-weight: $weight-semibold;
+}

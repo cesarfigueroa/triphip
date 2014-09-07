@@ -1,0 +1,14 @@
+.hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 67vh;
+  position: relative;
+}
+
+// Underlay
+
+.hero--underlay {
+  @include box-sizing(content-box); // allow padding to affect height
+  padding-bottom: 96px;
+}

@@ -1,0 +1,19 @@
+// Search
+
+.banner-search {
+  @include transform(translateY(-50%));
+
+  position: absolute;
+  right: $margin-offset;
+  top: 50%;
+}
+
+// Lists
+
+.card-list > li {
+  @include one-third;
+}
+
+.flight-list > li {
+  @include half;
+}

@@ -1,0 +1,15 @@
+.date-picker {
+  border: 1px dashed $color-light-gray;
+  border-width: 1px 0;
+  margin: -1px 0 $margin-double;
+  padding: $margin 0 15px;
+}
+
+.date-picker fieldset {
+  border: 0;
+  margin: 0;
+}
+
+.date-picker li {
+  margin-right: $margin-half;
+}

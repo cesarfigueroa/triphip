@@ -1,0 +1,17 @@
+---
+layout: default
+title: Hotels in Paris, France
+permalink: /hotels/paris/
+---
+
+<article>
+  <h2>{{ page.title }}</h2>
+
+  {% include date-picker.html to="Check In" from="Check Out" guests="Guests" %}
+
+  <ul class="card-list">
+    {% for hotel in site.data.hotels %}
+      <li>{% include cards/hotel.html hotel=hotel %}</li>
+    {% endfor %}
+  </ul>
+</article>

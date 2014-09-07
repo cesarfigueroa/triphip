@@ -1,0 +1,130 @@
+---
+layout: default
+title: Hotel Particulier Montmartre
+permalink: /book/
+---
+
+<article>
+  <header>
+    <h2>{{ page.title }}</h2>
+
+    <ul class="inline-list inline-list--bulleted">
+      <li>Junior Suite</li>
+      <li>3 Nights</li>
+    </ul>
+  </header>
+
+  <form action="/reservations/123" class="validate">
+    <fieldset>
+      <legend>Guest Details</legend>
+
+      <ol class="form-list">
+        <li>
+          <label for="guest-first-name" class="required">First Name</label>
+          <input type="text" id="guest-first-name" required autofocus />
+        </li>
+
+        <li>
+          <label for="guest-last-name" class="required">Last Name</label>
+          <input type="text" id="guest-last-name" required />
+        </li>
+
+        <li>
+          <label for="guest-email-address" class="required">Email</label>
+          <input type="email" id="guest-email-address" required />
+        </li>
+
+        <li>
+          <label for="guest-phone">Phone</label>
+          <input type="tel" id="guest-phone" />
+        </li>
+      </ol>
+    </fieldset>
+
+    <fieldset>
+      <legend>Billing</legend>
+
+      <ol class="form-list">
+        <li>
+          <label for="billing-street-address-1" class="required">Street Address</label>
+          <input type="text" id="billing-street-address-1" required />
+        </li>
+
+        <li>
+          <label for="billing-street-address-2">Street Address 2</label>
+          <input type="text" id="billing-street-address-2" placeholder="Apt, Suite or Unit Number" />
+        </li>
+
+        <li>
+          <label for="billing-country" class="required">Country</label>
+          <select id="billing-country">
+            {% for country in site.data.countries %}
+              <option value="{{ country }}" {% if country == 'United States of America' %}selected{% endif %}>{{ country }}</option>
+            {% endfor %}
+          </select>
+        </li>
+
+        <li>
+          <label for="billing-state" class="required">State / Province</label>
+          <select id="billing-state">
+            {% for state in site.data.states %}
+              <option value="{{ state }}">{{ state }}</option>
+            {% endfor %}
+          </select>
+        </li>
+
+        <li>
+          <label for="billing-city" class="required">City</label>
+          <input type="text" id="billing-city" required />
+        </li>
+
+        <li>
+          <label for="billing-postal-code" class="required">Postal Code</label>
+          <input type="number" id="billing-postal-code" required />
+        </li>
+      </ol>
+    </fieldset>
+
+    <fieldset>
+      <legend>Payment</legend>
+
+      <ol class="form-list">
+        <li>
+          <label for="card-name" class="required">Name on Card</label>
+          <input type="text" id="card-name" required />
+        </li>
+
+        <li>
+          <label for="card-number" class="required">Card Number</label>
+          <input type="number" id="card-number" required />
+        </li>
+
+        <li>
+          <label for="card-expiration-date-month" class="required">Expiration Date</label>
+
+          <div class="field-pair">
+            <select id="card-expiration-date-month">
+              {% for i in (1..12) %}
+                <option value="{{ i }}">{% if i < 10 %}0{% endif %}{{ i }}</option>
+              {% endfor %}
+            </select>
+
+            <select id="card-expiration-date-year">
+              {% for i in (0..10) %}
+                {% assign year = site.time | date: '%Y' | plus: i %}
+                <option value="{{ year }}">{{ year }}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </li>
+
+        <li>
+          <label for="card-security-code" class="required">Security Code</label>
+          <input type="number" id="card-security-code" placeholder="Hint: It&rsquo;s on the back of the card" required />
+        </li>
+      </ol>
+    </fieldset>
+
+    <button type="submit" class="button">Book for {% include price.html amount=1647.45 %}</button>
+  </form>
+</article>

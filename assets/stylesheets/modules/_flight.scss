@@ -1,0 +1,23 @@
+.flight {
+  background: $color-white;
+  border-radius: $size-border-radius;
+  box-shadow: 0 $size-shadow-collapsed 0 $color-light-gray;
+}
+
+.flight-summary {
+  border-bottom: 1px dashed $color-light-gray;
+}
+
+.flight-summary,
+.flight-details {
+  padding: $margin;
+}
+
+.flight-details {
+  position: relative;
+}
+
+.flight-board {
+  table-layout: fixed;
+  width: 100%;
+}

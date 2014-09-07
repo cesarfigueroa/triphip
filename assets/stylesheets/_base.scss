@@ -1,0 +1,32 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background: $color-tan;
+  color: $color-black;
+  font: 100%/#{$line-height} 'freight-sans-pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: 0 0 144px; // footer height + offset
+  text-rendering: optimizeLegibility;
+}
+
+main {
+  margin-bottom: $margin-double;
+  padding: 0 $margin-offset;
+}
+
+main,
+.container {
+  margin: auto;
+  max-width: $width-layout-max;
+  position: relative;
+}
+
+.container {
+  @extend %clearfix;
+  padding: $margin-offset;
+}

@@ -1,0 +1,39 @@
+<div class="flight">
+  <div class="flight-summary">
+    <table class="flight-board">
+      <thead>
+        <tr>
+          <th>Departing</th>
+          <th>Arriving</th>
+        </tr>
+      </thead>
+
+      <tfoot>
+        <tr>
+          <td>{{ include.flight.departure.time }} ({{ include.flight.duration }})</td>
+          <td>{{ include.flight.arrival.time }}, {% if include.flight.stops > 0 %}{{ include.flight.stops }} stop{% else %}Nonstop{% endif %}</td>
+        </tr>
+      </tfoot>
+
+      <tbody>
+        <tr>
+          <td>{{ site.data.airports[include.flight.departure.airport].city }}</td>
+          <td>{{ site.data.airports[include.flight.arrival.airport].city }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="flight-details">
+    <ul class="inline-list inline-list--bulleted">
+      <li><strong>{% include price.html amount=include.flight.price %}</strong></li>
+      <li>{{ include.flight.airline }}</li>
+    </ul>
+
+    <form action="{% if include.book %}/book{% else %}{{ include.action }}{% endif %}">
+      <button type="submit" class="button button--sticky {% unless include.book %}button--secondary{% endunless %}">
+        {% if include.book %}Book for {% include price.html amount=include.flight.price %}{% else %}Select{% endif %}
+      </button>
+    </form>
+  </div>
+</div>

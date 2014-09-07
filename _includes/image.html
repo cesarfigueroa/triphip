@@ -1,0 +1,1 @@
+<img src="/assets/images/{% if include.directory %}{{ include.directory }}/{% endif %}{{ include.name }}{% if include.index %}/{{ include.index }}{% endif %}.jpg" {% if include.retina %}srcset="/assets/images/{% if include.directory %}{{ include.directory }}/{% endif %}{{ include.name }}{% if include.index %}/{{ include.index }}{% endif %}@2x.jpg 2x"{% endif %} alt="" />

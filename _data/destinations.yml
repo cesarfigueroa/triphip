@@ -1,0 +1,30 @@
+- name: Big Sur
+  slug: big-sur
+
+- name: Chicago
+  slug: chicago
+
+- name: Hawaii
+  slug: hawaii
+
+- name: New York City
+  slug: new-york-city
+
+- name: San Francisco
+  slug: san-francisco
+
+- name: Seattle
+  slug: seattle
+
+- Amsterdam
+- Copenhagen
+- London
+- Los Angeles
+- New Delhi
+- Paris
+- Philadelphia
+- Seoul
+- Stockholm
+- Sydney
+- Tokyo
+- Zürich

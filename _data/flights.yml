@@ -1,0 +1,298 @@
+departures:
+  - airline: Air France
+    duration: 10h 40m
+    price: '1561.90'
+
+    departure:
+      airport: LAX
+      time: 6:35pm
+
+    arrival:
+      airport: CDG
+      time: 2:15pm
+
+  - airline: Delta
+    duration: 10h 40m
+    price: '1561.90'
+
+    departure:
+      airport: LAX
+      time: 9:35pm
+
+    arrival:
+      airport: CDG
+      time: 5:15pm
+
+  - airline: American Airlines
+    duration: 21h 30m
+    stops: 1
+    price: '1571.90'
+
+    departure:
+      airport: LAX
+      time: 12:25am
+
+    arrival:
+      airport: CDG
+      time: 6:55am
+
+  - airline: American Airlines
+    duration: 13h 30m
+    price: '1573.40'
+
+    departure:
+      airport: LAX
+      time: 10:15am
+
+    arrival:
+      airport: CDG
+      time: 8:45am
+
+  - airline: American Airlines
+    duration: 17h 45m
+    price: '1573.40'
+
+    departure:
+      airport: LAX
+      time: 6:00am
+
+    arrival:
+      airport: CDG
+      time: 8:45am
+
+  - airline: American Airlines
+    duration: 18h 35m
+    price: '1573.40'
+
+    departure:
+      airport: LAX
+      time: 7:00am
+
+    arrival:
+      airport: CDG
+      time: 10:35am
+
+  - airline: US Airways
+    duration: 14h 25m
+    price: 1575
+
+    departure:
+      airport: LAX
+      time: 7:30am
+
+    arrival:
+      airport: CDG
+      time: 6:55am
+
+  - airline: Lufthansa
+    duration: 13h 25m
+    price: '1576.50'
+
+    departure:
+      airport: LAX
+      time: 11:00am
+
+    arrival:
+      airport: CDG
+      time: 9:25am
+
+  - airline: United
+    duration: 13h 25m
+    price: '1576.50'
+
+    departure:
+      airport: LAX
+      time: 11:00am
+
+    arrival:
+      airport: CDG
+      time: 9:25am
+
+  - airline: Iberia
+    duration: 15h 25m
+    price: '1576.50'
+
+    departure:
+      airport: LAX
+      time: 8:50am
+
+    arrival:
+      airport: CDG
+      time: 9:15am
+
+  - airline: Air Canada
+    duration: 15h 25m
+    price: '1580.87'
+
+    departure:
+      airport: LAX
+      time: 8:45am
+
+    arrival:
+      airport: CDG
+      time: 8:30am
+
+  - airline: British Airways
+    duration: 14h 35m
+    price: '1583.50'
+
+    departure:
+      airport: LAX
+      time: 11:00am
+
+    arrival:
+      airport: CDG
+      time: 10:35am
+
+returns:
+  - airline: Air France
+    duration: 11h 35m
+    price: '1561.90'
+
+    departure:
+      airport: CDG
+      time: 10:30am
+
+    arrival:
+      airport: LAX
+      time: 1:05pm
+
+  - airline: Delta
+    duration: 11h 35m
+    price: '1568.90'
+
+    departure:
+      airport: CDG
+      time: 10:30am
+
+    arrival:
+      airport: LAX
+      time: 1:05pm
+
+  - airline: Air France
+    duration: 16h 23m
+    stops: 1 # JFK
+    price: 1572
+
+    departure:
+      airport: CDG
+      time: 4:50pm
+
+    arrival:
+      airport: LAX
+      time: 12:13am
+
+  - airline: KLM
+    duration: 13h 20m
+    stops: 1 # AMS
+    price: '1575.90'
+
+    departure:
+      airport: CDG
+      time: 10:20am
+
+    arrival:
+      airport: LAX
+      time: 2:40pm
+
+  - airline: KLM
+    duration: 13h 30m
+    stops: 1 # AMS
+    price: '1575.90'
+
+    departure:
+      airport: CDG
+      time: 7:20am
+
+    arrival:
+      airport: LAX
+      time: 11:50am
+
+  - airline: KLM
+    duration: 14h 50m
+    stops: 1 # AMS
+    price: '1575.90'
+
+    departure:
+      airport: CDG
+      time: 8:50am
+
+    arrival:
+      airport: LAX
+      time: 2:40pm
+
+  - airline: Delta
+    duration: 16h 0m
+    stops: 1 # DTW
+    price: 1579
+
+    departure:
+      airport: CDG
+      time: 10:50am
+
+    arrival:
+      airport: LAX
+      time: 5:50pm
+
+  - airline: Delta
+    duration: 16h 28m
+    stops: 1 # ATL
+    price: 1579
+
+    departure:
+      airport: CDG
+      time: 4:10pm
+
+    arrival:
+      airport: LAX
+      time: 11:38pm
+
+  - airline: Air France
+    duration: 11h 40m
+    price: '1601.90'
+
+    departure:
+      airport: CDG
+      time: 1:50pm
+
+    arrival:
+      airport: LAX
+      time: 4:30pm
+
+  - airline: Alitalia
+    duration: 16h 5m
+    stops: 1 # FCO
+    price: '1617.90'
+
+    departure:
+      airport: CDG
+      time: 7:15am
+
+    arrival:
+      airport: LAX
+      time: 2:20pm
+
+  - airline: Air Tahiti Nui
+    duration: 12h 0m
+    price: 1637
+
+    departure:
+      airport: CDG
+      time: 7:10pm
+
+    arrival:
+      airport: LAX
+      time: 10:10pm
+
+  - airline: Lufthansa
+    duration: 13h 50m
+    stops: 1 # FRA
+    price: '1642.70'
+
+    departure:
+      airport: CDG
+      time: 7:50am
+
+    arrival:
+      airport: LAX
+      time: 12:40pm

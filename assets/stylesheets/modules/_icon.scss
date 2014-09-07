@@ -1,0 +1,15 @@
+[class^="icon-"] {
+  @extend %hide-text;
+
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 0.75em;
+  display: inline-block;
+  height: 0.75em;
+  vertical-align: baseline;
+  width: 0.75em;
+}
+
+.icon-heart {
+  background-image: url('/assets/images/heart.svg');
+}

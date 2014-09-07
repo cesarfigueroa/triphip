@@ -1,0 +1,10 @@
+name: Triphip
+exclude:
+  - CNAME
+  - TODO
+  - Gemfile
+  - Rakefile
+relative_permalinks: false
+sass:
+  sass_dir: assets/stylesheets
+  style: :compressed

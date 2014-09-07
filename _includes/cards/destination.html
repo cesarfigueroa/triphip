@@ -1,0 +1,11 @@
+<div class="card">
+  <a href="/destinations/france/paris/">
+    <div class="card-details">
+      {% include image.html name=include.destination.slug directory="destinations" retina=true %}
+    </div>
+
+    <div class="card-summary">
+      <h4 class="card-title" title="{{ include.destination.name }}">{{ include.destination.name }}</h4>
+    </div>
+  </a>
+</div>

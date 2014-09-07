@@ -1,0 +1,26 @@
+---
+layout: default
+title: Returning Flights to Paris, France
+permalink: /flights/paris/return/
+---
+
+<article>
+  <header>
+    <h2>{{ page.title }}</h2>
+
+    <nav>
+      <ul class="inline-list inline-list--bulleted">
+        <li><a href="/flights/paris/">Departure</a></li>
+        <li class="selected">Return</li>
+      </ul>
+    </nav>
+  </header>
+
+  {% include date-picker.html to="Departing" from="Returning" guests="Passengers" %}
+
+  <ul class="flight-list">
+    {% for flight in site.data.flights.returns %}
+      <li>{% include flight.html flight=flight book=true %}</li>
+    {% endfor %}
+  </ul>
+</article>

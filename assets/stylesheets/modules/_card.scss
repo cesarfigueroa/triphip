@@ -1,0 +1,73 @@
+.card {
+  @include transition(all 160ms ease-in-out);
+
+  background: $color-white;
+  border-radius: $size-border-radius;
+  box-shadow: 0 $size-shadow-collapsed 0 $color-light-gray;
+  overflow: hidden;
+
+  &:not(.has-button):hover {
+    @include transform(translate3d(0, -3px, 0));
+    box-shadow: 0 $size-shadow-expanded 0 $color-light-gray;
+  }
+}
+
+.card-title,
+.card-subtitle {
+  @extend h4;
+
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-subtitle {
+  display: block;
+  font-weight: normal;
+}
+
+// Card Details (image frame)
+
+.card-details {
+  overflow: hidden;
+  position: relative;
+
+  // Set image aspect ratio to 2:3
+  &:before {
+    content: '';
+    display: block;
+    padding-top: percentage(2/3);
+  }
+}
+
+.card-details img {
+  @extend %align-center;
+
+  max-height: 100%; // Assume images are landscape
+  max-width: none; // Remove horizontal constraint
+}
+
+// Card Summary
+
+.card-summary {
+  padding: $margin;
+  position: relative;
+}
+
+// Mini Card
+
+.card--mini {
+  width: 100%;
+}
+
+.card--mini .card-details {
+  float: left;
+  height: ($margin * 4);
+  margin-right: $margin;
+  width: ($width-column + $width-gutter);
+}
+
+.card--mini .card-summary {
+  padding: $margin;
+}

@@ -1,0 +1,11 @@
+{% assign items = 'hotels,flights,cars' | split: ',' %}
+
+<nav role="navigation" class="{{ include.class }}">
+  <ul class="inline-list">
+    {% for item in items %}
+      <li {% if page.url contains item %}class="selected"{% endif %}>
+        <a href="/{{ item }}/paris/">{{ item | capitalize }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

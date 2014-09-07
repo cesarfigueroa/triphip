@@ -1,0 +1,81 @@
+- name: Hotel Particulier Montmartre
+  slug: hotel-particulier-montmartre
+  address: Pavillon D, 23 Avenue Junot, Paris
+  price: 523
+  rating: 4
+  website: hotel-particulier-montmartre.com
+  phone: +33 1 53 41 81 40
+  description: A jewel case in the last bit of historic Montmartre scrubland, nestled between the famous Avenue Junot and Rue Lepic, this vast Directorial style house is located in a unique spot. Facing the “Witch’s Rock” this former private home transformed in 2007 into a five-suite, luxury hotel is surrounded by both an exceptional private garden landscaped by the architect Louis Benech and a turn-of-the-century pétanque court.
+  rooms:
+    - name: Junior Suite
+      slug: junior-suite
+      price: 523
+      total: '1647.45'
+      amenities:
+        - 1 single bed
+        - shower
+        - bathtub
+
+    - name: Deluxe Suite
+      slug: deluxe-suite
+      price: 791
+      total: '2491.65'
+      amenities:
+        - 1 king-sized bed
+        - shower
+        - bathtub
+
+- name: Sofitel Paris le Faubourg
+  slug: sofitel-paris-le-faubourg
+  address: 15, Rue Boissy d'Anglas, Paris
+  price: 392
+
+- name: Raphael
+  slug: raphael
+  address: 17 Avenue Kléber, Paris
+  price: 414
+
+- name: Molitor Paris
+  slug: molitor-paris
+  address: 2 Avenue de la Porte Molitor, Paris
+  price: 286
+
+- name: L'Hôtel
+  slug: lhotel
+  address: 13 Rue des Beaux-Arts, Paris
+  price: 434
+
+- name: Hôtel Le Pradey
+  slug: hotel-le-pradey
+  address: 5 Rue Saint Roch, Paris
+  price: 252
+
+- name: Hôtel de Sers
+  slug: hotel-de-sers
+  address: 41 Avenue Pierre 1er de Serbie, Paris
+  price: 379
+
+- name: Hotel Montalembert
+  slug: hotel-montalembert
+  address: 3 Rue de Montalembert, Paris
+  price: 300
+
+- name: Sofitel Paris Arc de Triomphe
+  slug: sofitel-paris-arc-de-triomphe
+  address: 14 Rue Beaujon, Paris
+  price: 380
+
+- name: Hôtel Fouquet's Barrière
+  slug: hotel-fouquets-barriere
+  address: 46 Avenue George V, Paris
+  price: 886
+
+- name: Hôtel Le Bristol
+  slug: hotel-le-bristol
+  address: 112 Rue du Faubourg Saint-Honoré, Paris
+  price: 968
+
+- name: Hôtel Westminster
+  slug: hotel-westminster
+  address: 13 Rue de la Paix, Paris
+  price: 238

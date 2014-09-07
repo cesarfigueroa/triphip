@@ -1,0 +1,160 @@
+---
+layout: default
+title: Paris, France
+permalink: /destinations/france/paris/
+---
+
+<article>
+  <h2>Paris, France</h2>
+
+  <p>Paris has all but exhausted the superlatives that can reasonably be applied to any city. Notre Dame and the Eiffel Tower have been described countless times, as have the Seine and the subtle (and not-so-subtle) differences between the Left and Right Banks. Yet, what writers have never been able to even slightly reflect is the grandness and magic.</p>
+
+  <section>
+    <h3>Places to See</h3>
+
+    <ul class="card-list">
+      {% for attraction in site.data.attractions %}
+        <li>{% include cards/attraction.html attraction=attraction %}</li>
+      {% endfor %}
+    </ul>
+  </section>
+</article>
+
+<article>
+  <h2>Deals</h2>
+
+  <section>
+    <h3>Hotels</h3>
+
+    <ul class="card-list">
+      <li>
+        <div class="card">
+          <a href="/book/">
+            <div class="card-details">
+              {% include image.html directory="hotels" name="hotel-particulier-montmartre" retina=true %}
+              {% include price.html amount=475 period="night" class="price--sticky" variable=true %}
+            </div>
+
+            <div class="card-summary">
+              <h3 class="card-title" title="Hotel Particulier Montmartre">Hotel Particulier Montmartre</h3>
+            </div>
+          </a>
+        </div>
+      </li>
+
+      <li>
+        <div class="card">
+          <a href="/book/">
+            <div class="card-details">
+              {% include image.html directory="hotels" name="sofitel-paris-le-faubourg" retina=true %}
+              {% include price.html amount=300 period="night" class="price--sticky" variable=true %}
+            </div>
+
+            <div class="card-summary">
+              <h3 class="card-title" title="Sofitel Paris le Faubourg">Sofitel Paris le Faubourg</h3>
+            </div>
+          </a>
+        </div>
+      </li>
+
+      <li>
+        <div class="card">
+          <a href="/book/">
+            <div class="card-details">
+              {% include image.html directory="hotels" name="raphael" retina=true %}
+              {% include price.html amount=350 period="night" class="price--sticky" variable=true %}
+            </div>
+
+            <div class="card-summary">
+              <h3 class="card-title" title="Raphael">Raphael</h3>
+            </div>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Flights</h3>
+
+    <ul class="flight-list">
+      <li>
+        <div class="flight">
+          <div class="flight-summary">
+            <table class="flight-board">
+              <thead>
+                <tr>
+                  <th>Departing</th>
+                  <th>Arriving</th>
+                </tr>
+              </thead>
+
+              <tfoot>
+                <tr>
+                  <td>6:35pm (10h 40m)</td>
+                  <td>2:15pm, Nonstop</td>
+                </tr>
+              </tfoot>
+
+              <tbody>
+                <tr>
+                  <td>Los Angeles, CA</td>
+                  <td>Paris, France</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="flight-details">
+            <ul class="inline-list inline-list--bulleted">
+              <li>Air France</li>
+            </ul>
+
+            <form action="/book">
+              <button type="submit" class="button button--sticky">Book from {% include price.html amount=1400 %}</button>
+            </form>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="flight">
+          <div class="flight-summary">
+            <table class="flight-board">
+              <thead>
+                <tr>
+                  <th>Departing</th>
+                  <th>Arriving</th>
+                </tr>
+              </thead>
+
+              <tfoot>
+                <tr>
+                  <td>9:35pm (10h 40m)</td>
+                  <td>5:15pm, Nonstop</td>
+                </tr>
+              </tfoot>
+
+              <tbody>
+                <tr>
+                  <td>Los Angeles, CA</td>
+                  <td>Paris, France</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="flight-details">
+            <ul class="inline-list inline-list--bulleted">
+              <li>Delta</li>
+            </ul>
+
+            <form action="/book">
+              <button type="submit" class="button button--sticky">Book from {% include price.html amount=1400 %}</button>
+            </form>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+</article>

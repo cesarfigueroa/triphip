@@ -1,0 +1,22 @@
+.gallery {
+  @extend %list;
+  @include user-select(none);
+
+  cursor: pointer;
+}
+
+// Add dot indicators
+.gallery:after {
+  background: url('/assets/images/indicators.svg') no-repeat center center;
+  bottom: $margin;
+  content: '';
+  display: block;
+  height: 1rem;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.gallery .selected img {
+  z-index: 1;
+}

@@ -1,0 +1,44 @@
+- type: mini
+  company: CarDelMar
+  price: 18
+  total: 53
+
+- type: economy
+  company: CarDelMar
+  price: 20
+  total: 58
+
+- type: mini
+  company: Holiday Autos
+  price: 20
+  total: 59
+
+- type: mini
+  company: Holiday Autos
+  price: 21
+  total: 62
+
+- type: compact
+  company: Auto Europe
+  price: 24
+  total: 71
+
+- type: intermediate
+  company: Sixt
+  price: 29
+  total: 86
+
+- type: standard
+  company: Sixt
+  price: 32
+  total: 96
+
+- type: intermediate
+  company: Auto Europe
+  price: 34
+  total: 101
+
+- type: compact
+  company: Sixt
+  price: 41
+  total: 121

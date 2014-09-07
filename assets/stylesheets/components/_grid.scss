@@ -1,0 +1,24 @@
+@mixin half {
+  float: left;
+  margin-right: percentage($width-gutter / $width-layout);
+  width: columns(6);
+
+  &:nth-of-type(even) {
+    margin-right: 0;
+  }
+}
+
+@mixin one-third {
+  float: left;
+  margin-right: percentage($width-gutter / $width-layout);
+  width: columns(4);
+
+  // Override "half" mixin
+  &:nth-of-type(even) {
+    margin-right: percentage($width-gutter / $width-layout);
+  }
+
+  &:nth-of-type(3n+3) {
+    margin-right: 0;
+  }
+}

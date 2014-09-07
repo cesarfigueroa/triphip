@@ -1,0 +1,9 @@
+@include keyframes(shake) {
+  20%, 60% {
+    @include transform(translate3d(-6px, 0, 0));
+  }
+
+  40%, 80% {
+    @include transform(translate3d(6px, 0, 0));
+  }
+}
