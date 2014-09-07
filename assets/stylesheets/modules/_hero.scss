@@ -9,6 +9,6 @@
 // Underlay
 
 .hero--underlay {
-  @include box-sizing(content-box); // allow padding to affect height
+  box-sizing: content-box; // allow padding to affect height
   padding-bottom: 96px;
 }

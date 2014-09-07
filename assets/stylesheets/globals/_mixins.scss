@@ -16,10 +16,6 @@
   @include vendor-prefix(appearance, $value, ('moz', 'webkit'), false);
 }
 
-@mixin box-sizing($value) {
-  @include vendor-prefix(box-sizing, $value, ('moz', 'webkit'));
-}
-
 @mixin transform($value) {
   @include vendor-prefix(transform, $value, ('ms', 'moz', 'o', 'webkit'));
 }
