@@ -7,7 +7,7 @@
 
 // Add dot indicators
 .gallery:after {
-  background: url('/assets/images/indicators.svg') no-repeat center center;
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MSIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgNTEgOSI+PGcgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGN4PSI0Ni41IiBjeT0iNC41IiByPSI0LjUiLz48Y2lyY2xlIGN4PSIyNS41IiBjeT0iNC41IiByPSI0LjUiLz48cGF0aCBkPSJNNC41IDlDNi45ODUgOSA5IDYuOTg1IDkgNC41UzYuOTg1IDAgNC41IDAgMCAyLjAxNSAwIDQuNSAyLjAxNSA5IDQuNSA5em0wLTJDNS44OCA3IDcgNS44OCA3IDQuNVM1Ljg4IDIgNC41IDIgMiAzLjEyIDIgNC41IDMuMTIgNyA0LjUgN3oiLz48L2c+PC9zdmc+') no-repeat center center;
   bottom: $margin;
   content: '';
   display: block;
