@@ -1,4 +1,8 @@
 html {
+  // Prevent search animation from displaying background color
+  background: -webkit-linear-gradient(top, $color-dark-gray 0%, $color-dark-gray 48px, $color-tan 48px, $color-tan 100%);
+  background: linear-gradient(to bottom, $color-dark-gray 0%, $color-dark-gray 48px, $color-tan 48px, $color-tan 100%);
+
   min-height: 100%;
   position: relative;
 }

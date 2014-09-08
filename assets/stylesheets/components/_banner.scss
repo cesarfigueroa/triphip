@@ -2,6 +2,7 @@
   background: $color-white;
   box-shadow: 0 1px 0 $color-light-gray;
   line-height: 1;
+  position: relative;
   width: 100%;
 }
 
@@ -38,6 +39,5 @@
   box-shadow: none;
   color: white;
   margin-bottom: -96px; // Height of self
-  position: relative;
   z-index: 1;
 }

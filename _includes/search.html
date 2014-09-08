@@ -1,4 +1,4 @@
-<form method="get" action="/hotels/paris" class="search">
+<form method="get" action="/hotels/paris" class="search {% if include.modifier %}search--{{ include.modifier }}{% endif %}">
   <label for="search">Search</label>
-  <input type="search" id="search" placeholder="Where to?" spellcheck="false" autofocus />
+  <input type="search" id="search" placeholder="Where to?" spellcheck="false" {% if include.autofocus %}autofocus{% endif %} />
 </form>
