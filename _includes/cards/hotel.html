@@ -2,7 +2,7 @@
   <a href="/hotels/paris/hotel-particulier-montmartre/">
     <div class="card-details">
       {% include image.html name=include.hotel.slug directory="hotels" retina=true %}
-      {% include price.html amount=include.hotel.price period="night" class="price--sticky" %}
+      {% include price.html amount=include.hotel.price period="night" modifier="sticky" %}
     </div>
 
     <div class="card-summary">

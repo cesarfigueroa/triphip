@@ -1,3 +1,3 @@
-<span class="price {{ include.class }}">
+<span class="price {% if include.modifier %}price--{{ include.modifier }}{% endif %}">
   {% if include.variable %}from {% endif %}<span class="price-currency-symbol">$</span><span class="price-amount">{{ include.amount }}</span>{% if include.period %}<span class="price-period">/{{ include.period }}</span>{% endif %}
 </span>
