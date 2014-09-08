@@ -6,9 +6,14 @@
   position: relative;
 }
 
+.hero img {
+  visibility: hidden;
+}
+
 // Underlay
 
 .hero--underlay {
   box-sizing: content-box; // allow padding to affect height
+  margin-top: -96px;
   padding-bottom: 96px;
 }

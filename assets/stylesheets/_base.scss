@@ -34,5 +34,7 @@ main {
 
 .container {
   @extend %clearfix;
+
   padding: $margin-offset;
+  z-index: 1;
 }

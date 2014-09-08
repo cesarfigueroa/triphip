@@ -1,30 +1,47 @@
 ---
-layout: home
 ---
 
-<article>
-  <div class="hero hero--underlay" data-image-src="/assets/images/destinations/hero.jpg" data-position="bottom">
-    {% include image.html directory="destinations" name="hero" %}
-    {% include search.html modifier="overlay" autofocus=true %}
-  </div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ site.name }}</title>
+    {% include head.html %}
+  </head>
 
-  <h2>Destinations</h2>
+  <body>
+    <header role="banner" class="banner banner--overlay">
+      <div class="container">
+        <h1 class="banner-title">{{ site.name }}</h1>
+      </div>
 
-  <ul class="card-list">
-    {% for destination in site.data.destinations limit:6 %}
-      <li>
-        {% include cards/destination.html destination=destination %}
-      </li>
-    {% endfor %}
-  </ul>
+      {% include search.html modifier="overlay" autofocus=true %}
+      {% include hero.html path="destinations/hero.jpg" modifier="underlay" position="bottom" %}
+    </header>
 
-  <section>
-    <h3>More Places to Explore</h3>
+    <main role="main">
+      <article>
+        <h2>Destinations</h2>
 
-    <ul class="card-list">
-      {% for city in site.data.destinations offset:6 %}
-        <li><a href="/destinations/france/paris/">{{ city }}</a></li>
-      {% endfor %}
-    </ul>
-  </section>
-</article>
+        <ul class="card-list">
+          {% for destination in site.data.destinations limit:6 %}
+            <li>
+              {% include cards/destination.html destination=destination %}
+            </li>
+          {% endfor %}
+        </ul>
+
+        <section>
+          <h3>More Places to Explore</h3>
+
+          <ul class="card-list">
+            {% for city in site.data.destinations offset:6 %}
+              <li><a href="/destinations/france/paris/">{{ city }}</a></li>
+            {% endfor %}
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>

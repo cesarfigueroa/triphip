@@ -13,6 +13,10 @@
         <h1 class="banner-title"><a href="/">{{ site.name }}</a></h1>
         {% include navigation.html class="banner-navigation" %}
       </div>
+
+      {% if page.hero %}
+        {% include hero.html path=page.hero %}
+      {% endif %}
     </header>
 
     <main role="main">
