@@ -12,13 +12,8 @@ body {
   color: $color-black;
   font: 100%/#{$line-height} 'freight-sans-pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   height: 100%;
-  margin: 0 0 144px; // footer height + offset
+  margin: 0 0 96px; // footer height
   text-rendering: optimizeLegibility;
-}
-
-main {
-  margin-bottom: $margin-double;
-  padding: 0 $margin-offset;
 }
 
 main,
@@ -26,6 +21,11 @@ main,
   margin: auto;
   max-width: $width-layout-max;
   position: relative;
+}
+
+main {
+  margin-bottom: $margin-double;
+  padding: 0 $margin-offset;
 }
 
 .container {
