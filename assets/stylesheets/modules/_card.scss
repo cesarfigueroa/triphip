@@ -14,12 +14,8 @@
 
 .card-title,
 .card-subtitle {
-  @extend h4;
-
+  @extend h4, %clip-text;
   margin: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .card-subtitle {
