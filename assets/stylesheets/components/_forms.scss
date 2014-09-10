@@ -43,6 +43,8 @@ select {
 }
 
 select {
+  @extend %clip-text;
+
   background: $color-white url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTUgOSI+PHBhdGggZD0iTTEzLjA3LjM0NGMuNDM4LS40NiAxLjE1LS40NiAxLjU5IDAgLjQ0LjQ1OC40NCAxLjIwMiAwIDEuNjZsLTYuMzY0IDYuNjRjLS4yMjMuMjMyLS41MTQuMzQ3LS44MDUuMzQ1LS4yODggMC0uNTc2LS4xMTYtLjc5Ni0uMzQ1TC4zMyAyLjAwNUMtLjExIDEuNTQ0LS4xMS44LjMzLjM0NGMuNDQtLjQ2IDEuMTUtLjQ2IDEuNTkgMEw3LjQ5NiA2LjE2IDEzLjA3LjM0NHoiIGZpbGw9IiNEMEQwRDAiLz48L3N2Zz4=') no-repeat center right 18px;
   cursor: pointer;
   line-height: normal;
