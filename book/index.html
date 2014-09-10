@@ -111,7 +111,7 @@ permalink: /book/
 
             <select id="card-expiration-date-year">
               {% for i in (0..10) %}
-                {% assign year = site.time | date: '%Y' | plus: i %}
+                {% assign year = site.time | date: '%y' | plus: i %}
                 <option value="{{ year }}">{{ year }}</option>
               {% endfor %}
             </select>
