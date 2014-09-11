@@ -12,6 +12,10 @@
   }
 }
 
+.card a {
+  display: block;
+}
+
 .card-title,
 .card-subtitle {
   @extend h4, %clip-text;
@@ -54,16 +58,26 @@
 // Mini Card
 
 .card--mini {
+  display: table;
   width: 100%;
 }
 
 .card--mini .card-details {
-  float: left;
   height: ($margin * 4);
-  margin-right: $margin;
   width: ($width-column + $width-gutter);
 }
 
+.card--mini .card-details,
 .card--mini .card-summary {
-  padding: $margin;
+  display: table-cell;
+}
+
+.card--mini .card-summary {
+  padding: 0 $margin;
+  vertical-align: middle;
+}
+
+.card--mini .card-title {
+  max-height: ($margin * 2);
+  white-space: normal;
 }
