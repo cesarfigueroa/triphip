@@ -5,3 +5,7 @@
 .flight-list > li {
   @include half;
 }
+
+.form-list li {
+  @include half;
+}
