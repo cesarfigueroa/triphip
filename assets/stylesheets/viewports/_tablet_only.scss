@@ -2,3 +2,7 @@
 .form-list li {
   @include half;
 }
+
+.date-picker li {
+  @include one-third;
+}

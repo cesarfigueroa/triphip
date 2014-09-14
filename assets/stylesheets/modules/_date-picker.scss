@@ -10,6 +10,11 @@
   margin: 0;
 }
 
+.date-picker ol {
+  @extend %list, %clearfix;
+}
+
 .date-picker li {
-  margin-right: $margin-half;
+  margin: 0 $margin-half 1rem 0; // Account for label padding on bottom margin
+  position: relative;
 }
