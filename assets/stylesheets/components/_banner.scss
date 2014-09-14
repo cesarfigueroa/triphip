@@ -3,32 +3,21 @@
   box-shadow: 0 1px 0 $color-light-gray;
   line-height: 1;
   position: relative;
+  text-align: center;
   width: 100%;
 }
 
 .banner-title {
-  max-width: columns(3, true);
-  width: percentage(1/3);
-}
-
-.banner-title,
-.banner-navigation {
-  display: inline-block;
-  vertical-align: middle;
+  padding-top: $margin-half;
 }
 
 .banner-navigation {
-  @extend %inlinefix;
-
-  max-width: columns(9, true);
-  width: percentage(2/3);
+  border-top: 1px dashed $color-light-gray;
+  margin: $margin-offset 0 0;
+  padding-top: 1.125rem;
 }
 
-.banner-navigation ul {
-  margin-left: $margin;
-}
-
-.banner-navigation li {
+.banner-navigation li:not(:last-child) {
   margin-right: $margin-double;
 }
 

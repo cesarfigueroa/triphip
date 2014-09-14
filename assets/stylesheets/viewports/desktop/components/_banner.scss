@@ -1,0 +1,27 @@
+.banner {
+  text-align: left;
+}
+
+.banner-title {
+  max-width: columns(3, true);
+  padding: 0;
+  width: percentage(1/3);
+}
+
+.banner-title,
+.banner-navigation {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.banner-navigation {
+  border: 0;
+  margin: 0 0 0 -4px;
+  max-width: columns(9, true);
+  padding: 0;
+  width: percentage(2/3);
+}
+
+.banner-navigation ul {
+  margin-left: $margin;
+}
