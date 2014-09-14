@@ -55,6 +55,12 @@
   position: relative;
 }
 
+// Has Button
+
+.card.has-button .card-title {
+  margin-bottom: $margin-half;
+}
+
 // Mini Card
 
 .card--mini {

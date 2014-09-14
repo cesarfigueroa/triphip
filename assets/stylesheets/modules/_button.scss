@@ -7,9 +7,12 @@
   box-shadow: inset 0 (-$size-shadow-collapsed) 0 $color-dark-green;
   color: $color-white;
   cursor: pointer;
+  display: inline-block;
   font-weight: $weight-semibold;
   padding: $margin-half $margin;
+  text-align: center;
   text-shadow: 1px 1px 0 fade-out($color-black, 0.875);
+  width: 100%;
 
   &:hover:not(:active):not([disabled]) {
     box-shadow: inset 0 (-$size-shadow-expanded) 0 $color-dark-green;
@@ -46,8 +49,5 @@
 // Sticky
 
 .button--sticky {
-  @extend %align-vertically;
-
-  padding: $margin-quarter $margin-half;
-  right: 18px;
+  margin-top: $margin-half;
 }

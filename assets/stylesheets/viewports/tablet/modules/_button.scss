@@ -1,0 +1,13 @@
+.button:not(.button--contained) {
+  width: auto;
+}
+
+.button--sticky {
+  @include transform(translateY(-50%));
+
+  margin-top: 0;
+  padding: $margin-quarter $margin-half;
+  position: absolute;
+  right: 18px;
+  top: 50%;
+}
