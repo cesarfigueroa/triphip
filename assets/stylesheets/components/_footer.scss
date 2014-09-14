@@ -1,19 +1,17 @@
 .footer {
   background: mix($color-tan, $color-black, 87.5%);
-  bottom: 0;
-  height: 96px;
-  left: 0;
-  position: absolute;
   width: 100%;
 }
 
-.footer nav {
-  float: left;
+.footer-navigation {
+  @extend %list;
 }
 
-.footer small {
-  float: right;
+.footer-copy {
+  border-top: 1px dashed $color-gray;
+  display: block;
   font-size: 1rem;
   line-height: line-height-for(1rem);
-  text-align: right;
+  margin-top: $margin-half;
+  padding-top: $margin-half;
 }

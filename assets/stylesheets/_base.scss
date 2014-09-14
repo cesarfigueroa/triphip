@@ -2,9 +2,6 @@ html {
   // Prevent search animation from displaying background color
   background: -webkit-linear-gradient(top, $color-dark-gray 0%, $color-dark-gray 48px, $color-tan 48px, $color-tan 100%);
   background: linear-gradient(to bottom, $color-dark-gray 0%, $color-dark-gray 48px, $color-tan 48px, $color-tan 100%);
-
-  min-height: 100%;
-  position: relative;
 }
 
 body {
@@ -15,8 +12,7 @@ body {
   background: $color-tan;
   color: $color-black;
   font: 100%/#{$line-height} 'freight-sans-pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  height: 100%;
-  margin: 0 0 96px; // footer height
+  margin: 0;
   text-rendering: optimizeLegibility;
 }
 

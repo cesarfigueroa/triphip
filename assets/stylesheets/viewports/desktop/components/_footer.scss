@@ -1,0 +1,29 @@
+.footer {
+  bottom: 0;
+  height: 96px;
+  left: 0;
+  position: absolute;
+}
+
+.footer nav {
+  float: left;
+}
+
+.footer-navigation li {
+  display: inline-block;
+}
+
+.footer-navigation li:not(:first-child):before {
+  color: $color-dark-gray;
+  content: '●';
+  font-size: 0.6875rem;
+  padding: 0 ($margin-half + $margin-quarter);
+}
+
+.footer-copy {
+  border: 0;
+  float: right;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
