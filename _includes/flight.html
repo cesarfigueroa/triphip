@@ -10,8 +10,13 @@
 
       <tfoot>
         <tr>
-          <td>{{ include.flight.departure.time }} ({{ include.flight.duration }})</td>
-          <td>{{ include.flight.arrival.time }}, {% if include.flight.stops > 0 %}{{ include.flight.stops }} stop{% else %}Nonstop{% endif %}</td>
+          <td>{{ include.flight.departure.time }}</td>
+          <td>{{ include.flight.arrival.time }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ include.flight.duration }}</td>
+          <td>{% if include.flight.stops > 0 %}{{ include.flight.stops }} stop{% else %}Nonstop{% endif %}</td>
         </tr>
       </tfoot>
 
