@@ -38,14 +38,17 @@
 @import 'modules/price';
 @import 'modules/search';
 
+// Tablet
 @media (min-width: $width-mobile) {
   @import 'viewports/tablet';
 }
 
+// Tablet Only
 @media (min-width: $width-mobile + 1px) and (max-width: $width-tablet - 1px) {
   @import 'viewports/tablet_only';
 }
 
+// Desktop
 @media (min-width: $width-tablet) {
   @import 'viewports/desktop';
 }
