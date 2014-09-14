@@ -16,8 +16,6 @@ permalink: /flights/paris/return/
     </nav>
   </header>
 
-  {% include date-picker.html to="Departing" from="Returning" guests="Passengers" %}
-
   <ul class="flight-list">
     {% for flight in site.data.flights.returns %}
       <li>{% include flight.html flight=flight book=true %}</li>
