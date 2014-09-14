@@ -29,12 +29,12 @@ main,
 
 main {
   margin-bottom: $margin-double;
-  padding: 0 $margin-offset;
+  padding: 0 $margin;
 }
 
 .container {
   @extend %clearfix;
 
-  padding: $margin-offset;
+  padding: $margin;
   z-index: 1;
 }
