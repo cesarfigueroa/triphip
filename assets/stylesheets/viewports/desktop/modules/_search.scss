@@ -1,0 +1,26 @@
+.search input {
+  background-position: 40px center;
+  background-size: auto;
+  font-size: 1.75rem;
+  height: 96px;
+  padding-left: 96px;
+}
+
+.search--underlay {
+  margin-top: -96px;
+}
+
+// Underlay
+
+.search--underlay label {
+  top: 96px;
+}
+
+// When Open
+
+.search--underlay.open label {
+  background-size: auto;
+  height: 96px;
+  top: 0;
+  width: 96px;
+}
