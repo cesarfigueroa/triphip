@@ -1,9 +1,4 @@
-// Lists
 
-.card-list > li {
-  @include one-third;
-}
+// Components
 
-.flight-list > li {
-  @include half;
-}
+@import 'desktop/components/lists';

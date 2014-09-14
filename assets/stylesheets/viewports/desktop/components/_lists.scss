@@ -1,0 +1,7 @@
+.card-list > li {
+  @include one-third;
+}
+
+.flight-list > li {
+  @include half;
+}
